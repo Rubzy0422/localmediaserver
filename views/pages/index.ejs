@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+    <% files.forEach( (file, el) => { %>
+    <div class="row">
+        <div class="col">
+            <a href ="http://<%= ipaddress %>:<%= port %>/video/<%= el %>"><%= file %></a> 
+        </div>
+    </div>
+    <% }) %>
+</body>
+</html>
